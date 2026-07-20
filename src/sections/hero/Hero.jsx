@@ -1,5 +1,5 @@
 import styles from "../../assets/style/Hero.module.css";
-import {motion} from 'framer-motion';
+import { motion } from 'framer-motion';
 
 import {
   fadeUp,
@@ -9,12 +9,12 @@ export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.container}>
-        
-        <motion.div 
-        variants={fadeUp}
-        initial='hidden'
-        animate='visible'
-        className={styles.content}>
+
+        <motion.div
+          variants={fadeUp}
+          initial='hidden'
+          animate='visible'
+          className={styles.content}>
           <span className={styles.subtitle}>
             Frontend Developer
           </span>
@@ -39,7 +39,7 @@ export default function Hero() {
             <a
               href="https://github.com/syimykDev00"
               target="_blank"
-              ref='noreferrer'
+              rel="noopener noreferrer"
               className={styles.secondaryBtn}
             >
               GitHub
