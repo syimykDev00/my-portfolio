@@ -3,8 +3,6 @@ import {motion} from 'framer-motion';
 
 import {
   fadeUp,
-  fadeScale,
-  floatingAnimation,
 } from '../../animations/animations';
 
 export default function Hero() {
@@ -41,6 +39,7 @@ export default function Hero() {
             <a
               href="https://github.com/syimykDev00"
               target="_blank"
+              ref='noreferrer'
               className={styles.secondaryBtn}
             >
               GitHub

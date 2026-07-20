@@ -9,7 +9,7 @@ export default function Header() {
     setMenuOpen(false)
   }
 
-  const myNumber = +996702256437
+  const myNumber = '996702256437'
 
   return (
     <header className={styles.header}>
@@ -22,7 +22,7 @@ export default function Header() {
           className={`${styles.nav} ${menuOpen ? styles.active : ''
             }`}
         >
-          <a href="#" onClick={closeMenu}>Home</a>
+          <a href="#hero" onClick={closeMenu}>Home</a>
           <a href="#about" onClick={closeMenu}>About</a>
           <a href="#skills" onClick={closeMenu}>Skills</a>
           <a href="#projects" onClick={closeMenu}>Projects</a>
