@@ -1,0 +1,115 @@
+.skills {
+  padding: 140px 24px;
+
+  background: #0f172a;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.top {
+  margin-bottom: 60px;
+}
+
+.sectionName {
+  display: inline-block;
+
+  margin-bottom: 20px;
+
+  color: #38bdf8;
+  font-size: 14px;
+
+  border: 1px solid rgba(56, 189, 248, 0.3);
+
+  padding: 8px 14px;
+  border-radius: 999px;
+
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.title {
+  max-width: 700px;
+
+  font-size: 48px;
+  line-height: 1.2;
+
+  color: white;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 24px;
+}
+
+.card {
+  padding: 32px;
+
+  border-radius: 24px;
+
+  background: rgba(255,255,255,0.04);
+
+  border: 1px solid rgba(255,255,255,0.08);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.card h3 {
+  color: white;
+
+  font-size: 24px;
+
+  margin-bottom: 24px;
+}
+
+.items {
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 12px;
+}
+
+.items span {
+  padding: 10px 14px;
+
+  border-radius: 12px;
+
+  background: rgba(255,255,255,0.05);
+
+  color: #cbd5e1;
+
+  font-size: 14px;
+}
+
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills {
+    padding: 100px 24px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .card {
+    padding: 24px;
+  }
+}
